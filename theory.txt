@@ -24,3 +24,6 @@ git remote add origin https://github.com/natalyq1/AdmonStaff.git
 git branch -M master
 git push -u origin master
 ***********************
+
+
+props- Son propiedades externas que recibe un componente de React.
