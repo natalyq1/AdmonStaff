@@ -1,0 +1,26 @@
+REACT- Una biblioteca de JavaScript para construir interfaces de usuario. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
+https://es.reactjs.org/
+VIRTUAL DOM
+DOM REAL
+Single page application
+NPM- instalacion de paquetes y dependencias en proyectos JS
+package.json -es usado para almacenar metadatos asociados al proyecto.
+utiliza un archivo llamado package.json, donde se describen los paquetes y las dependencias necesarias para el proyecto, con sus versiones.
+
+JSX- html y js
+**********************
+Terminal
+    node -v
+    npm -v
+    npx create-react-app org
+
+    cd org
+    npm start
+
+***********************
+cd org
+para subir a git al crear el REPOSITORIO se usan el de 
+git remote add origin https://github.com/natalyq1/AdmonStaff.git
+git branch -M master
+git push -u origin master
+***********************
