@@ -27,3 +27,5 @@ git push -u origin master
 
 
 props- Son propiedades externas que recibe un componente de React.
+
+SPA-single page application caracteristica de react
