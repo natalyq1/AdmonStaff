@@ -4,12 +4,14 @@ import CampoTexto from "../CampoTexto";
 import ListaOpciones from "../ListaOpciones/ListaOpciones";
 import Boton from "../Boton/Index";
 
-
 const Formulario = (props) => {
   const [nombre, actualizarNombre] = useState("");
   const [puesto, actualizarPuesto] = useState("");
   const [foto, actualizarFoto] = useState("");
   const [equipo, actualizarEquipo] = useState("");
+
+  //destructuracion
+  const { registrarColaborador } = props;
 
   const manejarEnvio = (e) => {
     e.preventDefault();
@@ -18,44 +20,45 @@ const Formulario = (props) => {
       nombre,
       puesto,
       foto,
-      equipo
+      equipo,
     };
-    
-    console.log(datosAEnviar);
+    registrarColaborador(datosAEnviar);
   };
-  return  <section className="formulario">
-  <form onSubmit={manejarEnvio}>
-      <h2>Rellena el formulario para crear el colaborador.</h2>
-      <CampoTexto
+  
+  return (
+    <section className="formulario">
+      <form onSubmit={manejarEnvio}>
+        <h2>Rellena el formulario para crear el colaborador.</h2>
+        <CampoTexto
           titulo="Nombre"
           placeholder="Ingresar nombre"
           required
           valor={nombre}
           actualizarValor={actualizarNombre}
-      />
-      <CampoTexto
+        />
+        <CampoTexto
           titulo="Puesto"
           placeholder="Ingresar puesto"
           required
           valor={puesto}
           actualizarValor={actualizarPuesto}
-      />
-      <CampoTexto
+        />
+        <CampoTexto
           titulo="Foto"
           placeholder="Ingresar enlace de foto"
           required
           valor={foto}
           actualizarValor={actualizarFoto}
-      />
-      <ListaOpciones
+        />
+        <ListaOpciones
           valor={equipo}
           actualizarEquipo={actualizarEquipo}
           equipos={props.equipos}
-      />
+        />
         <Boton>Crear</Boton>
       </form>
     </section>
-  
+  );
 };
 
 export default Formulario;
