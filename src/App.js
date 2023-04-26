@@ -7,7 +7,13 @@ import Equipo from "./components/Equipo";
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false);
-  const [colaboradores, actualizarColaboradores] = useState([]);//arreglo vacio
+  const [colaboradores, actualizarColaboradores] = useState([{
+    equipo: 'Data Science',
+    foto: 'https://github.com/christianpva.png',
+    nombre: 'Christian Velasco',
+    puesto: 'Head de Alura e instructor'
+
+  }]);//arreglo vacio o dejo un arreglo con algo que deso que me aparesca por default
   //ternario --> condicion ? seMuestra : noSeMuestra
   //cortocircuito--> condicion && seMuestra
 
