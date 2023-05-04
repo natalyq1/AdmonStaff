@@ -24,6 +24,9 @@ git remote add origin https://github.com/natalyq1/AdmonStaff.git
 git branch -M master
 git push -u origin master
 ***********************
+Librerias
+npm install react-icons
+npm install hex-to-rgba
 
 
 props- Son propiedades externas que recibe un componente de React.
