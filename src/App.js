@@ -98,10 +98,10 @@ function App() {
   }
 
   //Actualizar color de equipo
-const actualizarColor = (color, titulo) => {
-  console.log('actualizar: ', color, titulo);
+const actualizarColor = (color, id) => {
+  console.log('actualizar: ', color, id);
   const equiposActualizados = equipos.map((equipo) => {
-    if (equipo.titulo === titulo) {
+    if (equipo.id === id) {
       equipo.colorPrimario = color
     }
     return equipo

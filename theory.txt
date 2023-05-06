@@ -27,7 +27,8 @@ git push -u origin master
 Librerias
 npm install react-icons
 npm install hex-to-rgba
-
+para crear un identificador unico
+npm install uuid
 
 props- Son propiedades externas que recibe un componente de React.
 
