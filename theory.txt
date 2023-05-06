@@ -29,6 +29,23 @@ npm install react-icons
 npm install hex-to-rgba
 para crear un identificador unico
 npm install uuid
+***********************
+para publicar en un sitio web
+    npm run build
+        -->optimiza el codigo, crea una carpeta build, cualquier modificacion en src
+    npm install -g serve
+    serve -s build
+        ---> nos da un enlace local
+        debe estar en una repositorio
+        VERCEL
+            import
+                framework: create react app
+                configure project- all as default
+                    deploy
+                        continue to dashborad
+                        DEPLOYMENT--Es el enlace que se va cambiando con los cambios
+                        DOMAINS- Es el que podriamos publicar en internet y compartir 
+
 
 props- Son propiedades externas que recibe un componente de React.
 
