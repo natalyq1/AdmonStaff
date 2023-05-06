@@ -93,8 +93,10 @@ function App() {
   //cortocircuito--> condicion && seMuestra
 
 //Eliminar colaborador
-  const eliminarColaborador = () => {
-    console.log('elimina');
+  const eliminarColaborador = (id) => {
+    console.log('elimina colaborador ', id);
+    const nuevosColaboradores = colaboradores.filter((colaborador) => colaborador.id !== id)
+    actualizarColaboradores(nuevosColaboradores);
   }
 
   //Actualizar color de equipo
