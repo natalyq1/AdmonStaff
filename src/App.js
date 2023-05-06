@@ -121,9 +121,11 @@ const actualizarColor = (color, id) => {
     actualizarColaboradores([...colaboradores, colaborador])
   }
 
-  
+  const crearEquipo = (nuevoEquipo) => {
+    console.log(nuevoEquipo);
+    actualizarEquipos([...equipos, { ...nuevoEquipo, id: uuid()}])
+  }
 
-  //Lista de equipos en un objeto
   
   return (
     <div>
@@ -132,7 +134,9 @@ const actualizarColor = (color, id) => {
       {mostrarFormulario && (
         <Formulario 
         equipos={equipos.map((equipo) => equipo.titulo)}
-        registrarColaborador ={registrarColaborador} />
+        registrarColaborador ={registrarColaborador} 
+        crearEquipo={crearEquipo}
+        />
       )}
 
       <MiOrg cambiarMostrar={cambiarMostrar} />
